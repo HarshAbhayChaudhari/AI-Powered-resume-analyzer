@@ -1,6 +1,6 @@
 # AI‑Powered Resume Analyzer 🧠📄
 
-**A full‑stack web app that parses PDF resumes, analyses key elements using AI, and delivers personalized feedback — built with React, Google Cloud Functions, and Firestore.**
+**A full‑stack web app that parses PDF resumes, analyses key elements using AI, and delivers personalized feedback — built with React, Google Cloud Functions, and Google Firestore.**
 
 ---
 
