@@ -8,4 +8,4 @@ bun = true
 
 [workspace]
 # Define workspaces for monorepo structure
-packages = ["my-app", "backend"]
+packages = ["app", "backend"]

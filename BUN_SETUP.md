@@ -46,7 +46,7 @@ bun install
 **Option B: Install frontend and backend separately**
 ```bash
 # Frontend
-cd my-app
+cd app
 bun install
 
 # Backend
@@ -56,7 +56,7 @@ bun install
 
 ## Available Scripts
 
-### Frontend (my-app/)
+### Frontend (app/)
 
 ```bash
 # Development server
@@ -119,7 +119,7 @@ bun remove <package> # Remove dependencies
 ```bash
 # Remove existing node_modules and lock files
 rm -rf node_modules package-lock.json
-rm -rf my-app/node_modules my-app/package-lock.json
+rm -rf app/node_modules app/package-lock.json
 rm -rf backend/node_modules backend/package-lock.json
 ```
 
@@ -147,10 +147,10 @@ exact = false
 bun = true
 
 [workspace]
-packages = ["my-app", "backend"]
+packages = ["app", "backend"]
 ```
 
-### Frontend Configuration (my-app/bunfig.toml)
+### Frontend Configuration (app/bunfig.toml)
 ```toml
 [install]
 exact = false
@@ -196,11 +196,8 @@ If you encounter issues with Bun, you can still use npm:
 ```bash
 # Remove Bun files
 rm -rf node_modules bun.lockb
-rm -rf my-app/node_modules my-app/bun.lockb
+rm -rf app/node_modules app/bun.lockb
 rm -rf backend/node_modules backend/bun.lockb
-
-# Use npm
-npm install
 ```
 
 ## Performance Comparison

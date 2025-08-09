@@ -7,7 +7,7 @@ This guide covers deploying the AI Resume Analyzer to production environments.
 ### 1. Build the Application
 
 ```bash
-cd my-app
+cd app
 npm run build
 ```
 

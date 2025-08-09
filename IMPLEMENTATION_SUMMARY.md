@@ -48,7 +48,7 @@ I've successfully implemented a complete AI-powered resume analyzer application 
 
 ```
 AI-Powered-resume-analyzer/
-├── my-app/                          # Frontend React application
+├── app/                             # Frontend React application
 │   ├── src/
 │   │   ├── components/              # React components
 │   │   │   ├── Header.js           # Navigation header
@@ -76,7 +76,7 @@ AI-Powered-resume-analyzer/
 
 ### 1. Start the Application
 ```bash
-cd my-app
+cd app
 npm start
 ```
 
@@ -128,27 +128,7 @@ The application currently uses a mock analysis system that:
 
 4. **Deploy Frontend**
    ```bash
-   cd my-app
+   cd app
    npm run build
    firebase deploy --only hosting
    ```
-
-## Technical Highlights
-
-- **PDF.js Integration**: Client-side PDF parsing with fallback to server-side
-- **Material-UI**: Professional, responsive design system
-- **React Context**: Efficient state management without external libraries
-- **Recharts**: Beautiful data visualization for skills analysis
-- **Error Boundaries**: Graceful error handling throughout the app
-- **Loading States**: User-friendly feedback during analysis
-- **Responsive Design**: Works on desktop, tablet, and mobile
-
-## Performance Optimizations
-
-- Lazy loading of components
-- Efficient PDF parsing with size limits
-- Optimized re-renders with React.memo
-- Debounced search and filtering
-- Compressed assets and code splitting
-
-The application is now ready for testing and can be easily extended with additional features like user authentication, advanced AI models, or integration with job boards. 

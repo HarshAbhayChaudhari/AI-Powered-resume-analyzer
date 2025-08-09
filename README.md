@@ -53,6 +53,22 @@ The Resume Analyzer empowers users to upload resumes (PDF) and receive AI‑driv
 - **Cloud Functions**: Parse PDFs, apply NLP/ML, compute scores
 - **Firestore**: Stores request/response history for dashboards
 
+AI-Powered-resume-analyzer/
+├── app/                             # ✅ Frontend React application (renamed)
+│   ├── src/
+│   │   ├── components/              # React components
+│   │   ├── context/                 # State management
+│   │   ├── services/                # API integration & Firebase
+│   │   └── App.js                   # Main application
+│   ├── public/                      # Static assets
+│   ├── package.json                 # Dependencies & scripts
+│   ├── bunfig.toml                  # Bun configuration
+│   ├── firebase.config.js           # Firebase credentials
+│   └── .gitignore                   # Git ignore rules
+├── backend/                         # Google Cloud Functions
+├── README.md                        # Updated documentation
+├── bunfig.toml                      # Updated workspace config
+└── [other config files]             # All updated
 ---
 
 ## 🛠 Tech Stack
@@ -100,7 +116,7 @@ bun install
 
 # Or install frontend and backend separately:
 # Frontend
-cd my-app
+cd app
 bun install
 
 # Backend  
@@ -114,7 +130,7 @@ If you prefer to use npm instead of Bun:
 
 ```bash
 # Install frontend dependencies
-cd my-app
+cd app
 npm install
 
 # Install backend dependencies
@@ -124,7 +140,7 @@ npm install
 
 ### Environment Setup
 
-Create a `.env` file in the `my-app` directory:
+Create a `.env` file in the `app` directory:
 
 ```env
 REACT_APP_API_URL=http://localhost:5001/api
@@ -158,8 +174,8 @@ REACT_APP_FIREBASE_APP_ID=your_app_id
 
 ```bash
 # Using Bun (recommended)
-# Start frontend (in my-app directory)
-cd my-app
+# Start frontend (in app directory)
+cd app
 bun start
 # or
 bun dev
@@ -174,8 +190,8 @@ bun dev
 ### Using npm (legacy)
 
 ```bash
-# Start frontend (in my-app directory)
-cd my-app
+# Start frontend (in app directory)
+cd app
 npm start
 
 # Start backend locally (in backend directory)
