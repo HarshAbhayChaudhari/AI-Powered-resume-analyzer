@@ -1,0 +1,16 @@
+[install]
+# Use exact versions for better reproducibility
+exact = false
+
+[run]
+# Enable Bun's fast module loading
+bun = true
+
+[test]
+# Use Jest for testing
+preload = ["./setupTests.js"]
+
+[dev]
+# Development server configuration
+port = 3000
+host = "localhost"

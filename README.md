@@ -63,6 +63,7 @@ The Resume Analyzer empowers users to upload resumes (PDF) and receive AI‑driv
 | Backend     | Google Cloud Functions (Node.js), OpenAI API (GPT)               |
 | Database    | Firebase Firestore                                                |
 | Parsing + NLP | pdf-parse, OpenAI GPT-3.5-turbo, Natural language processing    |
+| Package Manager | Bun (recommended) or npm                                         |
 | DevOps      | Firebase Hosting, Google Cloud CLI                                |
 
 ---
@@ -71,9 +72,22 @@ The Resume Analyzer empowers users to upload resumes (PDF) and receive AI‑driv
 
 ### Prerequisites
 
-- Node.js ≥14.x & npm  
+- **Package Manager**: Bun ≥1.0.0 (recommended) or Node.js ≥14.x & npm
 - Google Cloud account + Firebase CLI & project  
 - OpenAI API key (for production AI features)
+
+### Installing Bun (if not already installed)
+
+```bash
+# macOS/Linux
+curl -fsSL https://bun.sh/install | bash
+
+# Windows (with WSL)
+curl -fsSL https://bun.sh/install | bash
+
+# Verify installation
+bun --version
+```
 
 ### Clone & Install
 
@@ -81,6 +95,24 @@ The Resume Analyzer empowers users to upload resumes (PDF) and receive AI‑driv
 git clone https://github.com/yourusername/ai-resume-analyzer.git
 cd ai-resume-analyzer
 
+# Install all dependencies using Bun (recommended)
+bun install
+
+# Or install frontend and backend separately:
+# Frontend
+cd my-app
+bun install
+
+# Backend  
+cd ../backend
+bun install
+```
+
+### Alternative: Using npm (legacy)
+
+If you prefer to use npm instead of Bun:
+
+```bash
 # Install frontend dependencies
 cd my-app
 npm install
@@ -125,10 +157,29 @@ REACT_APP_FIREBASE_APP_ID=your_app_id
 ### Start Development
 
 ```bash
+# Using Bun (recommended)
 # Start frontend (in my-app directory)
+cd my-app
+bun start
+# or
+bun dev
+
+# Start backend locally (in backend directory)
+cd backend
+bun start
+# or
+bun dev
+```
+
+### Using npm (legacy)
+
+```bash
+# Start frontend (in my-app directory)
+cd my-app
 npm start
 
 # Start backend locally (in backend directory)
+cd backend
 npm start
 ```
 

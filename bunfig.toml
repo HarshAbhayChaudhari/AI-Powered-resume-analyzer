@@ -1,0 +1,11 @@
+[install]
+# Use exact versions for better reproducibility
+exact = false
+
+[run]
+# Enable Bun's fast module loading
+bun = true
+
+[workspace]
+# Define workspaces for monorepo structure
+packages = ["my-app", "backend"]

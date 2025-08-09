@@ -3,10 +3,13 @@
   "version": "1.0.0",
   "description": "Backend API for AI-powered resume analyzer",
   "main": "index.js",
+  "packageManager": "bun@1.2.10",
   "scripts": {
-    "start": "functions-framework --target=analyzeResume",
+    "start": "bunx functions-framework --target=analyzeResume",
     "deploy": "gcloud functions deploy analyzeResume --runtime nodejs18 --trigger-http --allow-unauthenticated",
-    "test": "jest"
+    "test": "bunx jest",
+    "dev": "bunx functions-framework --target=analyzeResume",
+    "install": "bun install"
   },
   "dependencies": {
     "@google-cloud/functions-framework": "^3.3.0",

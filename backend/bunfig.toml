@@ -1,0 +1,16 @@
+[install]
+# Use exact versions for better reproducibility
+exact = false
+
+[run]
+# Enable Bun's fast module loading
+bun = true
+
+[test]
+# Use Jest for testing
+preload = []
+
+[dev]
+# Development server configuration
+port = 5001
+host = "localhost"
